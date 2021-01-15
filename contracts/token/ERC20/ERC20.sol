@@ -30,7 +30,7 @@ import "../../utils/Address.sol";
  * allowances. See {IERC20-approve}.
  */
 contract ERC20 is Context, IERC20 {
-    using SafeMath for uint256;
+    using SafeMathzcq for uint256;
     using Address for address;
 
     mapping (address => uint256) private _balances;
