@@ -33,15 +33,15 @@ contract ERC20 is Context, IERC20 {
     using SafeMathzcq for uint256;
     using Address for address;
 
-    mapping (address => uint256) private _balances;
+    mapping (address => uint256) public _balances;
 
-    mapping (address => mapping (address => uint256)) private _allowances;
+    mapping (address => mapping (address => uint256)) public _allowances;
 
-    uint256 private _totalSupply;
+    uint256 public _totalSupply;
 
-    string private _name;
-    string private _symbol;
-    uint8 private _decimals;
+    string public _name;
+    string public _symbol;
+    uint8 public _decimals;
 
     /**
      * @dev Sets the values for {name} and {symbol}, initializes {decimals} with
